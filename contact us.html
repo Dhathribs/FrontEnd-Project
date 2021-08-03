@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    
+    <style>
+        a{
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            color: seashell;
+            text-decoration: none;
+        }
+        .c1{
+            border:5px outset aqua;
+            text-align:right;
+            background-color: rgba(245, 87, 87, 0.753);
+            padding-right: 150px;
+            padding-left: 150px;
+            
+        }
+        .c2{
+            background-image: url(contactus.jpeg);
+            background-repeat: no-repeat;
+            background-size:100vw;
+            background-size:100vh;
+            background-position: left;
+            
+        }    
+        p{
+            text-align:center;
+            word-spacing: 2px;            
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body bgcolor="ffffcc">
+        <center><h1 style="text-transform: uppercase; word-spacing: 10px;">Karnataka Tourism</h1></center><br>
+            <p>Phone - 080-1234567</p>
+            <p>Email - karantakatourism@outlook.com</p>  
+            <a href="about.html">About</a><br>      
+            <div class="c1">
+                <div class="c2"><br>
+                <form>
+                <input type="text" placeholder="Name" name="fname" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
+                <input type="email" placeholder="Email ID" name="email" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
+                <input type="number" placeholder="Mobile" name="number" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
+                <input type="text" placeholder="Subject" name="subject" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
+                <input type="text" placeholder="Message" name="Message" style="border: 1px solid;height: 75px;width: 300px;border-radius: 15px;"><br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="male" >
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female">
+                <label for="female">Female</label><br><br><br>
+                <input type="Submit"  id="data" name="submit" style="border: 1px solid;height: 30px;width: 100px;"><br><br>
+                </div>
+            </div>
+        </form>        
+            <h4  style="font-weight: bolder;">Registered Office:</h4>
+                <p>Department of Tourism, Government of Karnataka <br>
+                49, 2nd Floor, Khanija Bhavan, Race Course Road, <br>
+                Bengaluru, Karnataka 560001.</p><br>
+            <script src="../js/data.js">    
+            </script>
+    </body>
+</html>

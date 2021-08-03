@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+</head>
+<body>
+  <style>
+    body{
+      background-image: url(abstract.jpg);
+      background-repeat: no-repeat;
+      background-size: 200vw;
+      background-size: 230vh;
+      padding: 50px;
+    }
+    div.di{
+      border: 3px outset aqua;
+      width: 500px;
+      text-align:center;
+      padding: 40px;
+    }
+  </style>
+  <script>
+    function check(phno){
+      var reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/g;
+      if(reg.test(phno.phone.value)){
+      return true;
+      }
+      else{
+        alert("Enter mobile number in XXX-XXX-XXXX format");
+        return false;
+    }
+    }
+  </script>
+  <center>
+    <h1 style="color: rgb(238, 85, 98);">Registration</h1>
+  <div class="di">
+  <form name="formvalidate" onSubmit="return check(this)" action="login1.html"><br>
+
+  Name:
+  <input type="text" size="40" name="name" /> <br><br>
+  Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="male">Male
+    <input type="radio" name="female">Female<br><br>
+  Email id:
+    <input type="text" size="40" name="email" /><br><br>  
+  Mobile No : 
+   <input type="text" size="40" name="phone" /> <br><br>
+   Country:
+  <select id="country" name="country">
+    <option value="India">India</option>
+    <option value="China">China</option>
+    <option value="USA">USA</option>
+</select>
+
+  State:
+  <select name="state" id="state">
+      <option value="Karnataka">Karnataka</option>
+      <option value="Maharastra">Maharastra</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+  </select>
+
+  City:
+  <select name="city" id="city">
+      <option value="Bangalore">Bangalore</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Hydrebad">Hydrebad</option>
+  </select><br><br>
+
+  <input type="submit" value="Submit" />
+  <input type="reset" value="Clear"/> <br><br>
+ </form>         
+</div>
+</center>
+  
+</body>
+</html>

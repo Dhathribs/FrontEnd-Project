@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-image: url(abstract.jpg);
+            background-repeat: no-repeat;
+            background-size: 200vw;
+            background-size: 230vh;
+        }
+        #text{
+            border-radius: 50px;
+            align-content: center;
+            height: 50px;
+            width: 300px;
+        }
+        #pswd{
+            border-radius: 50px;
+            align-content: center;
+            height: 50px;
+            width: 300px;
+        }
+        div.d1{
+            border: 3px outset aqua;
+            text-align: center;
+            /* padding-top: 150px; */
+            width: 400px;
+            padding: 90px;
+            margin: 90px;
+        }
+    </style>
+    <script>
+        function check(mail){
+        var reg = /^\(?([a-zA-Z0-9]+@[a-zA-Z0-9.]+)$/g;
+            if(reg.test(mail.name.value))
+            {
+                var pw = document.getElementById("pswd").value;
+                if(pw == "")
+                {
+                    document.getElementById("message").innerHTML = "**Fill the password please!";
+                    return false;
+                }
+                
+                if(pw.length < 8) 
+                {
+                    document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+                    return false;
+                }
+
+                if(pw.length > 15) 
+                {
+                    document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+                    return false;
+                } 
+                else 
+                {
+                    alert("Password is correct");
+                }
+            }
+            else
+            {
+                alert("Enter Valid Username");
+                return false;
+            }
+        }
+</script>
+</head>
+<body>
+    <center>
+        <h1 style="color: rgb(238, 85, 98);">Login</h1>
+        <div class="d1">
+        <form name="form1" onsubmit="return check(this)" action="tourism.html">
+        <input type="text" id="text" name="name" placeholder="Username"/> <br><br>
+        <input type='password' id="pswd" name='pwd' placeholder="Password"/><br><br>
+        <p id = "message" style="color:red"> </p> <br><br>
+        <input type="submit" name="submit" value="Submit"/>
+        <input type="reset" value="Clear"/>
+        </form>
+        <p>New User
+        <a href="registration.html" style="text-decoration: none;color: rgb(139, 6, 6);">Register here</a></p>
+        </div>
+    </center>
+</body>
+</html>
