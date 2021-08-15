@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        a{
-            background-color: purple;
-            width: 100px;
-            height: 100px;
-            color: seashell;
+        body{
+            background-image: url(bangalore.jpg);
+            background-repeat: no-repeat;
+            background-size: 120vh;
+            background-size: 120vw;
+        }
+        div.d1{
+            text-align: right;
+            background-color: rgb(120, 222, 236);
+            padding-right: 100px;
+            padding-left: 100px;
+            font-size: 2.5vh;
+        }
+        
+         a{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
             text-decoration: none;
         }
         .c1{
-            border:5px outset aqua;
+            
             text-align:right;
-            background-color: rgba(245, 87, 87, 0.753);
             padding-right: 150px;
             padding-left: 150px;
             
@@ -25,47 +39,70 @@
         .c2{
             background-image: url(contactus.jpeg);
             background-repeat: no-repeat;
-            background-size:100vw;
-            background-size:100vh;
+            background: size 80vw;
+            background-size:80vh;
             background-position: left;
             
         }    
         p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
             text-align:center;
             word-spacing: 2px;            
         }
         h4{
             text-align: center;
         }
+        .fa {
+            padding: 5px;
+            font-size: 3vh;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        footer{
+            background-color:lightgrey ;
+            text-align: center;
+            opacity: 75%;
+        }
     </style>
     </head>
-    <body bgcolor="ffffcc">
-        <center><h1 style="text-transform: uppercase; word-spacing: 10px;">Karnataka Tourism</h1></center><br>
-            <p>Phone - 080-1234567</p>
-            <p>Email - karantakatourism@outlook.com</p>  
-            <a href="about.html">About</a><br>      
+    <body>
+        
+        <center><h2 style="font-family:Georgia, 'Times New Roman', Times, serif; text-transform: uppercase;">Karnataka Tourism</h2></center>
+            <div class="d1">
+                <a href="tourism.html">&nbsp;Home</a>&nbsp;|
+                <a href="home1.html">&nbsp;Things To Do</a>&nbsp;|
+                <a href="contact us.html">&nbsp;Contact US</a>&nbsp;|
+                <a href="about.html">&nbsp;Plan your Trip</a>&nbsp;|
+                <a href="registration.html">&nbsp;Registration</a>&nbsp;|
+                <a href="login1.html">&nbsp;Login</a>&nbsp;   
+        </div><br>
             <div class="c1">
-                <div class="c2"><br>
+                <div class="c2">
                 <form>
                 <input type="text" placeholder="Name" name="fname" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
                 <input type="email" placeholder="Email ID" name="email" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
                 <input type="number" placeholder="Mobile" name="number" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
-                <input type="text" placeholder="Subject" name="subject" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"><br><br>
                 <input type="text" placeholder="Message" name="Message" style="border: 1px solid;height: 75px;width: 300px;border-radius: 15px;"><br><br>
-                <label for="gender">Gender:</label><br>
-                <input type="radio" id="male" name="male" >
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="female">
-                <label for="female">Female</label><br><br><br>
-                <input type="Submit"  id="data" name="submit" style="border: 1px solid;height: 30px;width: 100px;"><br><br>
+                
+                <input type="Submit"  id="data" name="submit" style="margin-right: 100px; border: 1px solid;height: 30px;width: 100px;"><br><br>
                 </div>
             </div>
-        </form>        
-            <h4  style="font-weight: bolder;">Registered Office:</h4>
+        </form>   
+        <footer>
+            <h3  style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder;">Address</h3>
                 <p>Department of Tourism, Government of Karnataka <br>
                 49, 2nd Floor, Khanija Bhavan, Race Course Road, <br>
-                Bengaluru, Karnataka 560001.</p><br>
-            <script src="../js/data.js">    
-            </script>
+                Bengaluru, Karnataka 560001.</p>
+                <p><b>Phone - </b>080-1234567</p>
+                <p><b>Email - </b>karantakatourism@outlook.com</p>
+                <a href="https://www.facebook.com/KarnatakaWorld/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/KarnatakaWorld" class="fa fa-twitter"></a>
+                    
+                <a href="https://www.instagram.com/karnatakaworld/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/channel/UCWG2rwsJMUmFGywx4itZciw?app=desktop" class="fa fa-youtube"></a>
+        </footer>     
     </body>
 </html>
