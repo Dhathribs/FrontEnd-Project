@@ -5,46 +5,49 @@
 </head>
 <body>
   <style>
+    div.d1{
+            text-align: right;
+            background-color: rgb(120, 222, 236);
+            padding-right: 100px;
+            padding-left: 100px;
+            text-decoration: none;
+        }
+    a{
+          color: black;
+          text-decoration: none;
+        }
     body{
       background-image: url(abstract.jpg);
       background-repeat: no-repeat;
       background-size: 200vw;
       background-size: 230vh;
-      padding: 50px;
+      
     }
     div.di{
       border: 3px outset aqua;
       width: 500px;
       text-align:center;
-      padding: 40px;
+      
     }
+    
   </style>
-  <script>
-    function check(phno){
-      var reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/g;
-      if(reg.test(phno.phone.value)){
-      return true;
-      }
-      else{
-        alert("Enter mobile number in XXX-XXX-XXXX format");
-        return false;
-    }
-    }
-  </script>
+  
+  <div class="d1">
+    <a href="tourism.html">&nbsp;Home</a>&nbsp;|
+                <a href="home1.html">&nbsp;Things To Do</a>&nbsp;|
+                <a href="contact us.html">&nbsp;Contact US</a>&nbsp;|
+                <a href="about.html">&nbsp;Plan your Trip</a>&nbsp;|
+                <a href="registration.html">&nbsp;Registration</a>&nbsp;|
+                <a href="login1.html">&nbsp;Login</a>&nbsp;
+</div><br>
   <center>
     <h1 style="color: rgb(238, 85, 98);">Registration</h1>
   <div class="di">
   <form name="formvalidate" onSubmit="return check(this)" action="login1.html"><br>
 
-  Name:
-  <input type="text" size="40" name="name" /> <br><br>
-  Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="radio" name="male">Male
-    <input type="radio" name="female">Female<br><br>
-  Email id:
-    <input type="text" size="40" name="email" /><br><br>  
-  Mobile No : 
-   <input type="text" size="40" name="phone" /> <br><br>
+  <input type="text" size="40" name="name" placeholder="Name" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"/> <br><br>
+  <input type="text" size="40" name="email" placeholder="Email Id" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"/><br><br>  
+  <input type="text" size="40" name="phone" placeholder="Mobile No" style="border: 1px solid;height: 30px;width: 300px;border-radius: 15px;"/> <br><br>
    Country:
   <select id="country" name="country">
     <option value="India">India</option>
@@ -70,9 +73,12 @@
 
   <input type="submit" value="Submit" />
   <input type="reset" value="Clear"/> <br><br>
- </form>         
+  <script src="C:\Users\Dhathri\Documents\Frontend\data.js">    
+  </script> 
+ </form>  
+       
 </div>
 </center>
-  
+
 </body>
 </html>
