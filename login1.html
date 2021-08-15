@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
+        div.d1{
+            text-align: right;
+            background-color: rgb(120, 222, 236);
+            padding-right: 100px;
+            padding-left: 100px;
+            text-decoration: none;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
         body{
             background-image: url(abstract.jpg);
             background-repeat: no-repeat;
@@ -24,14 +35,16 @@
             height: 50px;
             width: 300px;
         }
-        div.d1{
+        div.d2{
             border: 3px outset aqua;
             text-align: center;
             /* padding-top: 150px; */
+            height: 200px;
             width: 400px;
-            padding: 90px;
-            margin: 90px;
+            padding: 50px;
+            
         }
+        
     </style>
     <script>
         function check(mail){
@@ -71,12 +84,20 @@
 </head>
 <body>
     <center>
-        <h1 style="color: rgb(238, 85, 98);">Login</h1>
         <div class="d1">
+            <a href="tourism.html">&nbsp;Home</a>&nbsp;|
+                <a href="home1.html">&nbsp;Things To Do</a>&nbsp;|
+                <a href="contact us.html">&nbsp;Contact US</a>&nbsp;|
+                <a href="about.html">&nbsp;Plan your Trip</a>&nbsp;|
+                <a href="registration.html">&nbsp;Registration</a>&nbsp;|
+                <a href="login1.html">&nbsp;Login</a>&nbsp;
+        </div>
+        <h1 style="color: rgb(238, 85, 98);">Login</h1>
+        <div class="d2">
         <form name="form1" onsubmit="return check(this)" action="tourism.html">
         <input type="text" id="text" name="name" placeholder="Username"/> <br><br>
         <input type='password' id="pswd" name='pwd' placeholder="Password"/><br><br>
-        <p id = "message" style="color:red"> </p> <br><br>
+        <p id = "message" style="color:red"> </p>
         <input type="submit" name="submit" value="Submit"/>
         <input type="reset" value="Clear"/>
         </form>
